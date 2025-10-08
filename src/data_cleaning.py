@@ -59,9 +59,10 @@ def save(df):
     print("Cleaned File Is Saved To The Path:",process_path)
 
 
-missing_value(df)
-duplicate(df)
-outliers(df)
-handle_outlier(df)
-visualize_data(df)
-save(df)
+if __name__ == "__main__":
+    missing_value(df)
+    duplicate(df)
+    outliers(df)
+    handle_outlier(df)
+    visualize_data(df)
+    save(df)

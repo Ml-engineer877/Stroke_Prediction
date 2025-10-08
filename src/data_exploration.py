@@ -35,7 +35,9 @@ def visualize_data(df):
     plt.savefig(os.path.join(images_dir,"Box Plot Of Num Col.jpg"))
     plt.show()
 
-info(df)
-missing_value(df)
-visualize_data(df)
+
+if __name__ =="__main__":
+    info(df)
+    missing_value(df)
+    visualize_data(df)
     

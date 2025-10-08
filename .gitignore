@@ -1,0 +1,72 @@
+# =====================================
+# 🧠 PYTHON & MACHINE LEARNING PROJECT
+# =====================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data folders (you can un-comment any line if you want to keep some files)
+data/raw/
+data/processed/
+data/interim/
+data/external/
+
+# Model and output files
+models/
+outputs/
+results/
+runs/
+*.pkl
+*.h5
+*.pt
+*.joblib
+
+# Temporary / cache files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Reports and generated documents
+reports/
+*.pdf
+*.csv
+*.xlsx
+*.xls
+*.json
+
+# System / IDE specific
+.vscode/
+.idea/
+*.code-workspace
+
+# Environment and configuration
+.env
+*.ini
+*.cfg
+*.yaml
+*.yml
+
+# Images and plots (optional, if you want to keep only select ones)
+images/
+figures/
+plots/
+
+# =====================================
+# ✅ KEEP THESE FILES
+# =====================================
+!README.md
+!requirements.txt
+!notebooks/
+!src/
+!setup.py
+!app.py
+!main.py
