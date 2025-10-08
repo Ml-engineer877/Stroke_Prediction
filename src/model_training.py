@@ -31,8 +31,15 @@ def train(x_train,y_train):
 
 def predict(x_test,y_test,model):
     pred=model.predict(x_test)
-    from sklearn.metrics import accuracy_score
+    from sklearn.metrics import accuracy_score,confusion_matrix
     print("Accuracy:",accuracy_score(y_test,pred)*100)
+    cm=confusion_matrix(y_test,pred)
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    sns.heatmap(cm,annot=True,cmap="coolwarm")
+    img_path=os.path.join(project_path,"images")
+    plt.savefig(os.path.join(img_path,"Confusion Matrix.png"))
+    plt.show()
     return pred
 
 def save(model,model_path):
